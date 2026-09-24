@@ -1,0 +1,19 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr 60px;
+  grid-template-areas:
+    "header  header"
+    "sidebar contenido"
+    "footer  footer";
+}
+
+.header    { grid-area: header;    background: #800d0d; color: white; display: flex; align-items: center; padding-left: 20px; }
+.sidebar   { grid-area: sidebar;   background: #fdebd0; padding: 20px; }
+.contenido { grid-area: contenido; padding: 20px; }
+.footer    { grid-area: footer;    background: #800d0d; color: white; display: flex; align-items: center; padding-left: 20px; }
