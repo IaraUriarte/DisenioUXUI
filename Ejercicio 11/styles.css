@@ -1,0 +1,24 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.lista-enlaces {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+}
+.lista-enlaces a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #800d0d;
+}
+.lista-enlaces a:hover {
+  background-color: #f5c6a0;
+  color: #800d0d;
+}
+.lista-enlaces li:nth-child(odd) {
+  background-color: #f4f6f7;
+}
+.lista-enlaces a::before {
+  content: "🔗 ";
+}

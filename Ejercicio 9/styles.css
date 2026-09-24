@@ -1,13 +1,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
 .galeria {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .producto {
   flex-basis: 200px;
   flex-grow: 1;
@@ -16,7 +14,6 @@ body {
   text-align: center;
   border-radius: 8px;
 }
-
 .producto img {
   max-width: 100%;
   border-radius: 4px;
