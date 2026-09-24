@@ -1,0 +1,26 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #800d0d;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
