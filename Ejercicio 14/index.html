@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Variables CSS y temas</title>
+</head>
+<body>
+  <div class="pagina">
+    <h1>Variables CSS</h1>
+    <p>Texto con variables definidas en :root.</p>
+    <button class="boton" id="toggle-tema">Cambiar a modo oscuro</button>
+  </div>
+
+  <script>
+    const boton = document.getElementById('toggle-tema');
+    boton.addEventListener('click', () => {
+      const html = document.documentElement;
+      const esOscuro = html.getAttribute('data-tema') === 'oscuro';
+      html.setAttribute('data-tema', esOscuro ? 'claro' : 'oscuro');
+      boton.textContent = esOscuro ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro';
+    });
+  </script>
+</body>
+</html>

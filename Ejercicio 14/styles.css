@@ -1,0 +1,34 @@
+:root {
+  --color-primario: #800d0d;
+  --color-secundario: #fdebd0;
+  --color-texto: #000000;
+  --color-fondo: #ffffff;
+  --espaciado: 20px;
+  --fuente-principal: 'Montserrat', sans-serif;
+}
+[data-tema="oscuro"] {
+  --color-primario: #f0f4f8;
+  --color-secundario: #2c3e50;
+  --color-texto: #f0f4f8;
+  --color-fondo: #1c2833;
+}
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  transition: background-color 0.3s, color 0.3s;
+}
+.pagina {
+  padding: var(--espaciado);
+}
+h1 {
+  color: var(--color-primario);
+}
+.boton {
+  background-color: var(--color-primario);
+  color: var(--color-fondo);
+  border: none;
+  padding: 10px var(--espaciado);
+  border-radius: 8px;
+  cursor: pointer;
+}
