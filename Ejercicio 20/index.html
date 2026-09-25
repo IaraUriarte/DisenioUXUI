@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Landing Page - Música</title>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">Música</div>
+
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#testimonios">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-contenido">
+        <h1>Todo sobre música, en un solo lugar</h1>
+        <p>Un espacio para escuchar, aprender y compartir música.</p>
+        <a href="#contacto" class="boton-cta">Conocé más</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+      <h2>¿Qué hacemos?</h2>
+
+      <div class="grid-servicios">
+
+        <div class="servicio-card">
+          <h3>Producción Musical</h3>
+          <p>Te ayudamos a trabajar en tus canciones.</p>
+        </div>
+
+        <div class="servicio-card">
+          <h3>Clases de Música</h3>
+          <p>Aprendé a tocar un instrumento o mejorá lo que ya sabés.</p>
+        </div>
+
+        <div class="servicio-card">
+          <h3>Grabación</h3>
+          <p>Grabá tus canciones con nosotros.</p>
+        </div>
+
+        <div class="servicio-card">
+          <h3>Eventos Musicales</h3>
+          <p>Música en vivo para distintos tipos de eventos.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonios">
+      <h2>Opiniones</h2>
+
+      <div class="carrusel">
+
+        <div class="testimonio">
+          <p>"Me gustó mucho cómo quedó mi canción."</p>
+          <span>— Luciano Romero</span>
+        </div>
+
+        <div class="testimonio">
+          <p>"Las clases me sirvieron bastante para mejorar."</p>
+          <span>— Sofia Caire</span>
+        </div>
+
+        <div class="testimonio">
+          <p>"Muy buena experiencia, todo salió bien."</p>
+          <span>— Iara Pavan</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contactanos</h2>
+
+      <form action="#" method="post" class="form-contacto">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Musica.</p>
+  </footer>
+
+</body>
+</html>

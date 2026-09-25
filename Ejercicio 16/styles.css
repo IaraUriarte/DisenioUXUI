@@ -1,0 +1,40 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #fdebd0;
+  border-top: 6px solid #800d0d;
+  border-radius: 50%;
+
+  animation-name: girar;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tarjeta-animada {
+  width: 300px;
+  padding: 20px;
+  background-color: #fdebd0;
+  border-radius: 10px;
+
+  animation-name: aparecer;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}

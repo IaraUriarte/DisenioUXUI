@@ -1,0 +1,50 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  background-color: #800d0d;
+  padding: 15px 20px;
+  position: relative;
+}
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.menu-toggle {
+  display: none;
+}
+.icono-hamburguesa {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 20px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .icono-hamburguesa {
+    display: block;
+  }
+  .menu {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .menu-toggle:checked ~ .menu {
+    max-height: 300px;
+  }
+}
